@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>All-in-One Rx Management Prototype</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Manage and track prescription status">
+		<meta name="keywords" content="Provider, Pharmacy, Carrier, Patient">
+		<meta name="author" content="Justin Picard">
+		<link rel="stylesheet" type="text/css" href="JPicardStyleSheet.css">
+</head>
+<body>
+	<ul class="menu">
+		<li class="menu"><a href="JPicardHomePage.html">Home</a></li>
+		<li class="menu"><a href="application.html">Application Prototype Informational</a></li>
+		<li class="menu"><a href="marketing.html">Marketing</a></li>
+		<li class="menu active"><a href="userguide.html">User Guide</a></li>
+		<li class="menu"><a href="about.html">About</a></li>
+	</ul>
+	<h1>User Guide</h1>
+	<br>
+	<h2>Managing Your Prescriptions</h2>
+	<p>Welcome to the All-in-One Rx Management Prototype. This guide will help you view, request, and track your repeat prescriptions securely.</p>
+	<ol>
+		<li><a href="#viewing" class="w3-bar-item w3-button">Viewing Your Current Prescriptions</a></li>
+		<li><a href="#requesting" class="w3-bar-item w3-button">Requesting a Repeat Prescription</a></li>
+		<li><a href="#selecting" class="w3-bar-item w3-button">Selecting a Pharmacy</a></li>
+		<li><a href="#status" class="w3-bar-item w3-button">Prescription Status Tracker</a></li>
+		<li><a href="#support" class="w3-bar-item w3-button">Troubleshooting and Support</a></li>
+	</ol>
+	<br>
+	<hr>
+	
+	<!-- Container (Viewing Section) -->
+	
+		<h2 class="w3-center">Viewing Your Current Prescriptions</h2>
+		<p class="w3-center"><em>Upon logging in, you will be taken to your Dashboard.</em></p>
+		<ul>
+			<li>Active Medications: A list of all your current, active prescriptions.</li>
+			<li>Next Due Date: Shows when reorder is available.</li>
+			<li>Medication Details: Click on a medication name to view dosage instructions, remaining refills, and last date refilled.</li>
+		</ul>
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<hr>
+	
+	<!-- Container (Requesting Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="requesting">
+		<h3 class="w3-center">Requesting a Repeat Prescription</h3>
+		<ol>
+			<li>Select Items: Go to the Request Prescription" tab.</li>
+			<li>Tick Items: Tick the box nexty to the medication(s) you wish to order.</li>
+			<li>Special Request: If you need an item not on your list, use the "Special Request" box to type the item name.</li>
+			<li>Confirm Request: Click the "Send Request" button.</li>
+			<li>Confirmation: You will receive an on-screen confirmation and an email confirming the request has been sent to your doctor.</li>
+		</ol>
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<hr>
+	
+	<!-- Container (Selecting Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="selecting">
+		<h3 class="w3-center">Selecting a Pharmacy</h3>
+		<ul>
+			<li>Change Pharmacy: You can nominate a pharmacy to receive your electronic prescription (EPS) directly. Go to Settings > Pharmacy to choose a new location.</li>
+			<li>Update Details: Ensure your phone number and email are current to receive notifcations about your order status.</li>
+		</ul>
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<hr>
+	
+	<!-- Container (Status Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="status">
+		<h3 class="w3-center">Prescription Status Tracker</h3>
+		<p class="w3-center"><em>Track your request from approval to collection:</em></p>
+		<ul>
+			<li>Requested: Submitted to your doctor.</li>
+			<li>Approved: Approved by the doctor and sent to the pharmacy.</li>
+			<li>Ready for Collection: The pharmacy has prepared your medication</li>
+		</ul>
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<hr>
+	
+	<!-- Container (Support Section) -->
+	<div class="w3-content w3-container w3-padding-64" id="support">
+		<h3 class="w3-center">Troubleshooting and Support</h3>
+		<ul>
+			<li>"Items not listed": If a medication is not showing, it may be due for a review. Please contact your Provider</li>
+			<li>Incorrect dosage: If a dosage is wrong, do not order it. Contact your Provider.</li>
+			<li>Forgotten Password: Click "Forgot Password" on the lgin screen to reset your credentials.</li>
+		</ul>
+	<br>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<hr>
+	
+	<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	
+</body>
+</html>
